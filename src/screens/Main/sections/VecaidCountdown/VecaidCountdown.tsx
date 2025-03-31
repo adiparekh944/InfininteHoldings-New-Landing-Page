@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Card } from "../../../../components/ui/card";
 import Spline from '@splinetool/react-spline';
+import "../../../../index.css";
 
 interface TimeLeft {
   days: number;
@@ -59,10 +60,10 @@ export const VecaidCountdown = (): JSX.Element => {
         <div className="container mx-auto flex flex-col items-center gap-12 px-4">
           {/* Header Section */}
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-5xl font-bold text-white mb-6">
+            <h2 className="text-5xl font-bold text-white mb-6" style={{ fontFamily: 'Furore' }}>
               Vecaid Beta Is Almost Here!
             </h2>
-            <p className="text-xl text-neutral-200">
+            <p className="text-xl text-neutral-200" style={{ fontFamily: 'Manolo' }}>
               The date is approaching fast and we're making preparations. Don't miss out!
             </p>
           </div>
@@ -77,11 +78,11 @@ export const VecaidCountdown = (): JSX.Element => {
             ].map((item, index) => (
               <div key={index} className="flex flex-col items-center">
                 <div className="w-32 h-32 rounded-full border-2 border-white/30 backdrop-blur-sm flex items-center justify-center mb-2">
-                  <span className="text-4xl font-bold text-white">
+                  <span className="text-4xl font-bold text-white" style={{ fontFamily: 'Manolo' }}>
                     {String(item.value).padStart(2, '0')}
                   </span>
                 </div>
-                <span className="text-white text-sm uppercase">{item.label}</span>
+                <span className="text-white text-sm uppercase" style={{ fontFamily: 'Manolo' }}>{item.label}</span>
               </div>
             ))}
           </div>

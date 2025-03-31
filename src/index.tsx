@@ -1,3 +1,4 @@
+import React from 'react';
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -7,6 +8,7 @@ import { About } from "./pages/About";
 import { Vecaid } from "./pages/Vecaid";
 import { Team } from "./pages/Team";
 import { Contact } from "./pages/Contact";
+import { ServicesOffered } from "./pages/ServicesOffered";
 
 createRoot(document.getElementById("app") as HTMLElement).render(
   <StrictMode>
@@ -19,6 +21,7 @@ createRoot(document.getElementById("app") as HTMLElement).render(
           <Route path="/vecaid" element={<Vecaid />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/servicesoffered" element={<ServicesOffered />} />
         </Routes>
       </div>
     </Router>

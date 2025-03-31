@@ -2,6 +2,7 @@ import { ArrowRightIcon, CheckIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
+import "../../../../index.css";
 
 export const OurServices = (): JSX.Element => {
   return (
@@ -10,10 +11,10 @@ export const OurServices = (): JSX.Element => {
         <div className="container mx-auto flex flex-col items-center gap-24">
           {/* Heading Section */}
           <div className="w-full max-w-4xl mx-auto text-center">
-            <h2 className="text-5xl font-medium text-white mb-8">
+            <h2 className="text-5xl font-medium text-white mb-8" style={{ fontFamily: 'Furore' }}>
               Our Services
             </h2>
-            <p className="text-xl text-neutral-200 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl text-neutral-200 max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: 'Manolo' }}>
             Infinite Holdings Group offers a suite of services designed to fuel growth across diverse industries. 
             From small business development and AI-driven solutions to expert marketing strategies, we empower businesses to thrive.
             </p>
@@ -27,15 +28,15 @@ export const OurServices = (): JSX.Element => {
                 <ul className="space-y-4 mb-10">
                   <li className="flex items-start gap-3">
                     <CheckIcon className="w-7 h-7 text-[#FFD700] flex-shrink-0 mt-1" strokeWidth={3} />
-                    <span className="text-neutral-200 text-xl">Small Business Development and Management</span>
+                    <span className="text-neutral-200 text-xl" style={{ fontFamily: 'Manolo' }}>Small Business Development and Management</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckIcon className="w-7 h-7 text-[#FFD700] flex-shrink-0 mt-1" strokeWidth={3} />
-                    <span className="text-neutral-200 text-xl">AI Backed Solutions</span>
+                    <span className="text-neutral-200 text-xl" style={{ fontFamily: 'Manolo' }}>AI Backed Solutions</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckIcon className="w-7 h-7 text-[#FFD700] flex-shrink-0 mt-1" strokeWidth={3} />
-                    <span className="text-neutral-200 text-xl">Expert Market Planning</span>
+                    <span className="text-neutral-200 text-xl" style={{ fontFamily: 'Manolo' }}>Expert Market Planning</span>
                   </li>
                 </ul>
               </CardContent>

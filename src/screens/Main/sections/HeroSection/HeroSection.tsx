@@ -8,7 +8,7 @@ export const HeroSection = (): JSX.Element => {
       {/* Gradient background effect */}
         <div className="w-screen h-screen bg-background items-center">
             <Spline
-              scene="https://prod.spline.design/TkUOniyGhN-Hl-et/scene.splinecode"
+              scene="https://prod.spline.design/RSTsXobW-tIQ6Z4n/scene.splinecode"
             />
         </div>
         {/* CTA Button 
